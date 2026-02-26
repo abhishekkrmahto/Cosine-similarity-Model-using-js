@@ -2,12 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recommendation Model</title>
+    <title>Document Recommendation System</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    
+
+    <div class="container">
+        <h1>📄 Document Recommendation System</h1>
+        <p class="subtitle">Cosine Similarity Based Recommender</p>
+
+        <div class="card">
+            <h2>Add New Document</h2>
+
+            <textarea id="docInput" placeholder="Enter your document text here..."></textarea>
+
+            <div class="button-group">
+                <button id="addDocBtn">Add Document</button>
+                <button id="computeBtn" class="primary">Compute Similarity</button>
+                <button id="clearBtn" class="primary">Clear</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Similarity Results</h2>
+            <ul id="resultList"></ul>
+        </div>
+
+        <div class="card">
+            <h2>Stored Documents</h2>
+            <ul id="docList"></ul>
+        </div>
+
+        
+    </div>
+
 </body>
-<script src="../js/index.js"></script>
+<script type="module" src="../js/index.js"></script>
+<script type="module" src="../../JavaScript/recommendationModel.js"></script>
 </html>
